@@ -1,6 +1,7 @@
 // import { useRouter } from 'next/router'
 import Link from 'next/link'
 import ArticleItem from '../../components/ArticleItem'
+import Meta from '../../components/Meta'
 const url = process.env.API_URL
 
 const Article = ({ article }) => {
@@ -9,6 +10,7 @@ const Article = ({ article }) => {
 
 	return (
 		<>
+			<Meta title={`Article ${article.id}`} desc={article.title} />
 			<ArticleItem article={article} />
 			<Link href='/'>Go Back</Link>
 		</>
