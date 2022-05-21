@@ -1,5 +1,6 @@
 import Header from '../components/Header'
 import Articles from '../components/Articles'
+const url = process.env.API_URL
 
 export default function Home({ articles }) {
 	return (
@@ -16,7 +17,7 @@ export default function Home({ articles }) {
 }
 
 export const getStaticProps = async () => {
-	const res = await fetch(`/api/articles/`)
+	const res = await fetch(`${url}/api/articles/`)
 	const articles = await res.json()
 
 	return {
