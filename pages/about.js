@@ -1,24 +1,23 @@
 import Head from 'next/head'
 import homeStyles from '../styles/Home.module.css'
 
-export default function Home() {
+const About = () => {
 	return (
 		<>
 			<Head>
-				<title>Welcome</title>
-				<meta name='description' content='next application' />
+				<title>About</title>
 			</Head>
-
 			<div className={homeStyles.heroSection}>
 				<h1>
-					Welcome to <span>NextJS Application</span>
+					About <span>Us</span>
 				</h1>
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis architecto alias dicta culpa,
+					Ipsum dolor sit amet consectetur adipisicing elit. Officiis architecto alias dicta culpa,
 					natus voluptatem pariatur aliquid temporibus obcaecati aperiam atque dolorem deserunt id quae?
-					Assumenda perferendis voluptates illo! Ab!
 				</p>
 			</div>
 		</>
 	)
 }
+
+export default About
