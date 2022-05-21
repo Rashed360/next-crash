@@ -1,5 +1,5 @@
 import Header from '../components/Header'
-import styles from '../styles/Home.module.css'
+import Articles from '../components/Articles'
 
 export default function Home({ articles }) {
 	return (
@@ -10,14 +10,7 @@ export default function Home({ articles }) {
 				highlight='Our Application'
 				desc='Ipsum dolor sit amet consectetur, adipisicing elit. Eum dolor beatae incidunt officia deleniti ullam cupiditate accusamus nam. Hic, eius lorem.'
 			/>
-			<div className={styles.grid}>
-				{articles.map(article => (
-					<div className={styles.card} key={article.id}>
-						<h2>{article.title}</h2>
-						<p>{article.body}</p>
-					</div>
-				))}
-			</div>
+			<Articles articles={articles} />
 		</div>
 	)
 }
