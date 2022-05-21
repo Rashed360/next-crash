@@ -1,32 +1,32 @@
-export const ArticleList = [
+export const UserList = [
 	{
 		id: 1,
-		name: 'Rashed',
-		moto: 'asdf asdgfadsf df asdf asd',
-		skills: [
-			{
-				name: 'React',
-				level: 'Advanced',
-			},
-			{
-				name: 'Next',
-				level: 'Intermediate',
-			},
-		],
+		title: 'asdf asdgfadsf df asdf asd',
+		moto: 'asdf asdgfadsf df asdf asd asdf asdgfadsf df asdf asd asdf asdgfadsf df asdf asd',
 	},
 	{
 		id: 2,
-		name: 'Sajeeb',
-		moto: 'asdgfadsf asdf df asdf-asd',
-		skills: [
-			{
-				name: 'Django',
-				level: 'Advanced',
-			},
-			{
-				name: 'CSS',
-				level: 'Intermediate',
-			},
-		],
+		title: 'asdf asdgfadsf df asdf asd',
+		moto: 'asdf asdgfadsf df asdf asd asdf asdgfadsf df asdf asd asdf asdgfadsf df asdf asd',
+	},
+	{
+		id: 3,
+		title: 'asdf asdgfadsf df asdf asd',
+		moto: 'asdf asdgfadsf df asdf asd asdf asdgfadsf df asdf asd asdf asdgfadsf df asdf asd',
+	},
+	{
+		id: 4,
+		title: 'asdf asdgfadsf df asdf asd',
+		moto: 'asdf asdgfadsf df asdf asd asdf asdgfadsf df asdf asd asdf asdgfadsf df asdf asd',
+	},
+	{
+		id: 5,
+		title: 'asdf asdgfadsf df asdf asd',
+		moto: 'asdf asdgfadsf df asdf asd asdf asdgfadsf df asdf asd asdf asdgfadsf df asdf asd',
+	},
+	{
+		id: 6,
+		title: 'asdf asdgfadsf df asdf asd',
+		moto: 'asdf asdgfadsf df asdf asd asdf asdgfadsf df asdf asd asdf asdgfadsf df asdf asd',
 	},
 ]
