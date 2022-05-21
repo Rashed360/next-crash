@@ -1,21 +1,8 @@
-.heroSection h1 {
-	font-size: 3rem;
-	margin: 0;
-}
-.heroSection h1 span {
-	color: #0070f3;
-}
-.heroSection p {
-	font-size: 1.5rem;
-	color: #343434;
-}
-
 .grid {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
-	max-width: 800px;
 }
 
 .card {

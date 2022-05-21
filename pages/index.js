@@ -1,24 +1,34 @@
-import Head from 'next/head'
-import homeStyles from '../styles/Home.module.css'
+import Header from '../components/Header'
+import styles from '../styles/Home.module.css'
 
-export default function Home() {
+export default function Home({ articles }) {
 	return (
-		<>
-			<Head>
-				<title>Welcome</title>
-				<meta name='description' content='next application' />
-			</Head>
-
-			<div className={homeStyles.heroSection}>
-				<h1>
-					Welcome to <span>NextJS Application</span>
-				</h1>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis architecto alias dicta culpa,
-					natus voluptatem pariatur aliquid temporibus obcaecati aperiam atque dolorem deserunt id quae?
-					Assumenda perferendis voluptates illo! Ab!
-				</p>
+		<div>
+			<Header
+				pageTitle='Welcome'
+				title='Welcome to'
+				highlight='Our Application'
+				desc='Ipsum dolor sit amet consectetur, adipisicing elit. Eum dolor beatae incidunt officia deleniti ullam cupiditate accusamus nam. Hic, eius lorem.'
+			/>
+			<div className={styles.grid}>
+				{articles.map(article => (
+					<div className={styles.card} key={article.id}>
+						<h2>{article.title}</h2>
+						<p>{article.body}</p>
+					</div>
+				))}
 			</div>
-		</>
+		</div>
 	)
+}
+
+export const getStaticProps = async () => {
+	const res = await fetch(`https://jsonplaceholder.typicode.com/posts?_limit=6`)
+	const articles = await res.json()
+
+	return {
+		props: {
+			articles,
+		},
+	}
 }
